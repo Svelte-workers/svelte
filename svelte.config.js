@@ -16,3 +16,5 @@ const config = {
 };
 
 export default config;
+
+//npm install @sveltejs/vite-plugin-svelte --save-dev
