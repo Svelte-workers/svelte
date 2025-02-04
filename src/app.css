@@ -1,0 +1,59 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.gwapo {
+	background-color: pink;
+}
+
+:root {
+	--animation-duration: 0.5s;
+}
+@keyframes fadeDown {
+	from {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to {
+		opacity: 100;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 100;
+		transform: translateY(0px);
+	}
+}
+
+.fade-down {
+	animation: fadeDown var(--animation-duration) ease-out;
+}
+
+.fade-up {
+	animation: fadeUp var(--animation-duration) ease-out;
+}
+
+body {
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #333;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700; /* Bold for headings */
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400; /* Regular weight */
+}
