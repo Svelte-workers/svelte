@@ -1,19 +1,17 @@
-<script lang=ts>
-  import { onMount } from 'svelte';
-  import { goto } from '$app/navigation';
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	import CirclesRight from '$lib/circles-right.svelte';
 
+	// let circles:any = [];
 
-
-  // let circles:any = [];
-
-  // onMount(() => {
-  //     circles = [
-  //         { id: 1, size: '20px', color: 'bg-red-500', left: '62%', top: '29%', delay: '0s' },
-  //         { id: 2, size: '15px', color: 'bg-rose-200', left: '55%', top: '48%', delay: '1s' },
-  //         { id: 3, size: '25px', color: 'bg-amber-400', left: '64%', top: '64%', delay: '2s' }
-  //     ];
-  // });
+	// onMount(() => {
+	//     circles = [
+	//         { id: 1, size: '20px', color: 'bg-red-500', left: '62%', top: '29%', delay: '0s' },
+	//         { id: 2, size: '15px', color: 'bg-rose-200', left: '55%', top: '48%', delay: '1s' },
+	//         { id: 3, size: '25px', color: 'bg-amber-400', left: '64%', top: '64%', delay: '2s' }
+	//     ];
+	// });
 </script>
 
 <!-- <style>
@@ -61,9 +59,9 @@
   }
 </style> -->
 
-<div class="  py-[150px] relative min-h-screen text-gray-900">
-  <!-- Floating Circles -->
-  <!-- {#each circles as circle}
+<div class="fadeLeft relative min-h-screen py-[150px] text-gray-900">
+	<!-- Floating Circles -->
+	<!-- {#each circles as circle}
       <div class="floating-circle {circle.color}"
           style="width: {circle.size}; height: {circle.size}; 
                  left: {circle.left}; top: {circle.top}; 
@@ -78,42 +76,49 @@
           </clipPath>
       </defs>
   </svg> -->
-  
+	<CirclesRight />
 
-<CirclesRight/>
-<!-- Blob Container -->
-<div class="blob"></div>
-  <!-- Get Started Button -->
-<div class="m-[40px] fade-up min-h-screen text-gray-900">
-  <section class="relative flex flex-col md:flex-row items-center px-12 m-0">
-      <!-- Left Content -->
-      <div class=" space-y-6 relative">
-          <h3 class="text-red-500 font-bold text-lg">About Veent</h3>
-          <h2 class="text-5xl font-extrabold text-gray-900">Who are we?</h2>
-          <p class="text-lg text-gray-700 leading-relaxed">
-              Veent was born from a simple idea: event registration shouldn’t be a headache.
-              We believe anyone should be able to create and manage events with ease,
-              regardless of technical expertise or budget.
-          </p>
-          <div class="space-y-6">
-              <div>
-                  <h3 class="text-2xl font-bold text-red-500">Our Mission</h3>
-                  <p class="text-lg text-gray-700">To empower individuals and organizations to host unforgettable events through a user-friendly and affordable event management platform.</p>
-              </div>
-              <div>
-                  <h3 class="text-2xl font-bold text-orange-500">Our Vision</h3>
-                  <p class="text-lg text-gray-700">To become the leading all-in-one event management solution, simplifying the process for organizers of all backgrounds and budgets, and fostering a thriving community of event creators.</p>
-              </div>
-          </div>
-    
-<!-- Floating Action Button with Fixed Position -->
-<a href="/aboutus2" class=" bottom-8 left-8 w-12 h-12 bg-red-500 rounded-full flex items-center justify-center 
-shadow-lg cursor-pointer hover:scale-110 hover:animate-bounce transition-transform">
-  <span class="text-white text-xl">&#10132;</span>
-      </a>
+	<!-- Blob Container -->
+	<div class="blob"></div>
+	<!-- Get Started Button -->
+	<div class=" m-[40px] min-h-screen text-gray-900">
+		<section class="relative m-0 flex flex-col items-center px-12 md:flex-row">
+			<!-- Left Content -->
+			<div class=" relative space-y-6">
+				<h3 class="text-lg font-bold text-red-500">About Veent</h3>
+				<h2 class="text-5xl font-extrabold text-gray-900">Who are we?</h2>
+				<p class="text-lg leading-relaxed text-gray-700">
+					Veent was born from a simple idea: event registration shouldn’t be a headache. We believe
+					anyone should be able to create and manage events with ease, regardless of technical
+					expertise or budget.
+				</p>
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-2xl font-bold text-red-500">Our Mission</h3>
+						<p class="text-lg text-gray-700">
+							To empower individuals and organizations to host unforgettable events through a
+							user-friendly and affordable event management platform.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-2xl font-bold text-orange-500">Our Vision</h3>
+						<p class="text-lg text-gray-700">
+							To become the leading all-in-one event management solution, simplifying the process
+							for organizers of all backgrounds and budgets, and fostering a thriving community of
+							event creators.
+						</p>
+					</div>
+				</div>
 
-
-      </div>
-  </section>
-</div>
+				<!-- Floating Action Button with Fixed Position -->
+				<a
+					href="/aboutus2"
+					class=" bottom-8 left-8 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full
+bg-red-500 shadow-lg transition-transform hover:scale-110 hover:animate-bounce"
+				>
+					<span class="text-xl text-white">&#10132;</span>
+				</a>
+			</div>
+		</section>
+	</div>
 </div>

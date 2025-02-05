@@ -19,79 +19,80 @@
 	function handleFeatureClick(route: string): void {
 		$pageTabs = route;
 	}
-	
 </script>
 
-<div class="relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50">
+<div class="relative my-[70px] overflow-hidden">
 	<div class="p-10 text-center">
-		<h2 class="text-font text-3xl font-bold text-red-500">Features</h2>
-		<h1 class="text-font mt-2 text-[30px] font-bold ">Veent goes beyond<br />basic registration.</h1>
-		<p class="text-font mx-auto mb-16 mt-4 max-w-2xl text-gray-600">
-			Our suite of features empowers you to create seamless event experiences. Choose a feature to
-			see details.
+		<h2 class="text-font text-[25px] font-bold text-red-500">Features</h2>
+		<h1 class="text-font mt-px text-[35px] font-bold">
+			Veent goes beyond basic<br />registration.
+		</h1>
+		<p class="text-font mb-100 mt- mx-auto max-w-2xl text-[#3F3D3E]">
+			Our suite of features empowers you to create seamless<br /> event experiences. Choose a feature
+			to see details.
 		</p>
 
 		<!-- Feature Blobs with Text -->
-		<div class="relative mx-auto max-w-5xl">
+		<div class="relative mx-auto mt-px max-w-5xl">
 			<!-- Effortless -->
-			<div
-				class="absolute left-[5%] top-[10%] cursor-pointer transition-transform hover:scale-105"
+			<button
+				class="absolute left-[-10%] top-[-15%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('effortless')}
 			>
-				<div class="h-[200px] w-[200px] rounded-[40%] "><Smallblob/></div>
+				<div class="h-[200px] w-[200px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Effortless</div>
 					<div class="text-[16px]">Event Pages</div>
 				</div>
-			</div>
+			</button>
 
 			<!-- Seamless -->
-			<div
-				class="absolute right-[10%] top-[15%] cursor-pointer transition-transform hover:scale-105"
+			<button
+				class="absolute right-[-5%] top-[-5%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('seamless')}
 			>
-				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob/></div>
+				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Seamless</div>
 					<div class="text-[16px]">Payments</div>
 				</div>
-			</div>
+			</button>
 
 			<!-- Streamlined -->
-			<div
-				class="absolute left-[35%] top-[40%] cursor-pointer transition-transform hover:scale-105"
+			<button
+				class="absolute left-[40%] top-[20%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('stream')}
 			>
-				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob/></div>
+				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Streamlined</div>
 					<div class="text-[16px]">Attendance</div>
 				</div>
-			</div>
+			</button>
 
 			<!-- Smart -->
-			<div
-				class="absolute left-[10%] top-[60%] cursor-pointer transition-transform hover:scale-105"
+			<button
+				class="absolute left-[5%] top-[50%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('smart')}
 			>
-				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob/></div>
+				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Smart</div>
 					<div class="text-[16px]">Attendee Data</div>
 				</div>
-			</div>
+			</button>
 
 			<!-- Data-Driven -->
-			<div
-				class="absolute right-[15%] top-[65%] cursor-pointer transition-transform hover:scale-105"
+			<button
+				class="absolute right-[9%] top-[55%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('data_driven')}
 			>
-				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob/></div>
+				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Data-Driven</div>
 					<div class="text-[16px]">Decisions</div>
 				</div>
-			</div>
+			</button>
 
 			<!-- Spacer div to maintain height -->
 			<div class="h-[600px]"></div>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import { pageTabs } from '../../stores/userVariables';
-	import Effort from '../icons/effort.svelte';
+	import Effort from '../images/effort.svelte';
 
 	let currentSlide = 0;
 	const totalSlides = 5;
@@ -45,9 +45,9 @@
 		<!-- Center Image -->
 		<div class="mt-16 flex items-center justify-center">
 			<div class="flex w-full max-w-4xl justify-center">
-				<div class="cursor-pointer transition-transform hover:scale-105" on:click={goBack}>
+				<button class="cursor-pointer transition-transform hover:scale-105" on:click={goBack}>
 					<Effort />
-				</div>
+				</button>
 			</div>
 		</div>
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { pageTabs } from '../../stores/userVariables';
-	import Smart from '../icons/smart.svelte';
+	import Smart from '../images/smart.svelte';
 
 	let currentSlide = 0;
 	const totalSlides = 5;
@@ -42,9 +42,9 @@
 		<!-- Center Image -->
 		<div class="mt-16 flex items-center justify-center">
 			<div class="flex w-full max-w-4xl justify-center">
-				<div class="cursor-pointer transition-transform hover:scale-105" on:click={goBack}>
+				<button class="cursor-pointer transition-transform hover:scale-105" on:click={goBack}>
 					<Smart />
-				</div>
+				</button>
 			</div>
 		</div>
 
@@ -61,7 +61,12 @@
 					viewBox="0 0 24 24"
 					stroke="currentColor"
 				>
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M15 19l-7-7 7-7"
+					/>
 				</svg>
 			</button>
 
