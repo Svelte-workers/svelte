@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { pageTabs } from '../stores/userVariables';
 	import AboutUs from './templates/aboutUs.svelte';
+	import AboutUs2 from './templates/aboutUs2.svelte';
+	import AboutUs3 from './templates/aboutUs3.svelte';
 	import Features from './templates/features.svelte';
 	import ContactUs from './templates/contactUs.svelte';
 	import HomePage from './templates/homePage.svelte';
@@ -19,7 +21,11 @@
 {#if $pageTabs == 'home'}
 	<HomePage />
 {:else if $pageTabs == 'aboutUs'}
-	<AboutUs />
+	<AboutUs/>
+{:else if $pageTabs == 'aboutUs2'}
+	<AboutUs2/>
+{:else if $pageTabs == 'aboutUs3'}
+	<AboutUs3/>
 {:else if $pageTabs == 'features'}
 	<Features />
 {:else if $pageTabs == 'pricing'}

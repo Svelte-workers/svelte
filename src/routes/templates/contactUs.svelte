@@ -11,12 +11,14 @@
 	import Navigation from './navigation.svelte';
     
 	let currentYear = new Date().getFullYear();
+	
+	
 </script>
 <div class="background">
 	<Navigation />
 <div class="">
 	<main class="flex px-24 py-12 gap-24">
-		<div class="flex-1 bg-red-100 rounded-3xl p-12 relative">
+		<div class="flex-1 bg-blue-100 rounded-3xl p-12 relative"> 
 			<h1 class="text-red-600 text-4xl font-bold mb-4">Get in touch with us!</h1>
 			<p class="text-gray-600 mb-8">Interested? Just pick up the phone to talk with our representative.</p>
 

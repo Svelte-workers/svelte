@@ -5,20 +5,25 @@
   
 </script>
 <div class="background relative min-h-screen text-gray-900">
+    
   <Navigation/>
 <!-- Blob Container -->
+ 
 <div class="blob"></div>
+
   <!-- Get Started Button -->
-<div class="m-[30px] fade  text-gray-900">
-  <section class="relative flex flex-col md:flex-row-reverse items-center px-12 m-0">
-    <!-- Right Content -->
-    <div class="relative md:w-1/3">
-        <img
-          src="/path/to/your/image.png"
-          alt="Event audience"
-          class="rounded-2xl shadow-lg object-cover"
-        />
-      </div>
+<div class="m-[30px] fade-up  text-gray-900">
+    
+    <section class="relative flex flex-col md:flex-row-reverse items-center px-12 m-0">
+        <!-- Right Content -->
+        <div class="relative md:w-1/3">
+            <img
+              src="/path/to/your/image.png"
+              alt="Event audience"
+              class="rounded-2xl shadow-lg object-cover"
+            />
+          </div>
+ 
       <div class=" space-y-8 relative">
           <h3 class="text-[23px] text-red-500 font-bold ">About Veent</h3>
           <h2 class="text-5xl font-extrabold text-gray-900">Who are we?</h2>
@@ -40,10 +45,14 @@
           <AboutusCircle/>
 
 <!-- Floating Action Button with Fixed Position -->
-<a role="button" on:click={() => pageTabs.set("aboutUs2")} class=" bottom-8 left-8 w-12 h-12 bg-red-500 rounded-full flex items-center justify-center 
-shadow-lg cursor-pointer hover:scale-110 hover:animate-bounce transition-transform">
-  <span class="text-white text-xl">&#10132;</span>
-      </a>
+<a 
+role="button" 
+on:click={() => pageTabs.set("aboutUs2")} 
+class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center 
+       shadow-lg cursor-pointer hover:scale-110 hover:animate-bounce transition-transform"
+>
+<span class="text-white text-xl" style="transform: rotate(180deg);">&#10132;</span>
+</a>
       </div>
   </section>
 </div>
