@@ -61,7 +61,7 @@
   }
 </style> -->
 <CirclesRight/>
-<div class="background relative min-h-screen text-gray-900">
+<div class="bg-[url('/background.png')] bg-cover bg-center h-screen w-full sm:bg-contain md:bg-cover relative min-h-screen text-gray-900">
   <Navigation />
   <!-- Floating Circles -->
   <!-- {#each circles as circle}

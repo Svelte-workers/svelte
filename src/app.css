@@ -59,15 +59,5 @@ p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400; /* Regular weight */
 }
-.background-1 {
-	background-color: black;
-}
 
-.background {
-    background-image: url('/background.png');
-    background-size: cover;
-    background-position: center;
-    /* background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh; Full viewport height */
-}
+

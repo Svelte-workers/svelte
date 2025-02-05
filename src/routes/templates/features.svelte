@@ -23,7 +23,7 @@
 	
 </script>
 
-<div class="background">
+<div class="bg-[url('/background.png')] bg-cover bg-center h-screen w-full sm:bg-contain md:bg-cover">
 	<Navigation />
 	<div class="p-10 text-center">
 		<h2 class="text-font text-3xl font-bold text-red-500">Features</h2>

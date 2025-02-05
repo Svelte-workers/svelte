@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { pageTabs } from '../../stores/userVariables';
 	import Effort from '../icons/effort.svelte';
-
+	import Navigation from './navigation.svelte';
 	let currentSlide = 0;
 	const totalSlides = 5;
 
@@ -26,8 +26,9 @@
 </script>
 
 
-<div class="background">
-
+<div class="bg-[url('/background.png')] bg-cover bg-center h-screen w-full sm:bg-contain md:bg-cover">
+	
+		<Navigation />
 
 	<!-- relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50 -->
 	<!-- Background Blobs -->
@@ -36,7 +37,7 @@
 	<div class="absolute bottom-[20%] left-[15%] h-5 w-5 rounded-full bg-red-200/50" />
 	<div class="absolute bottom-[25%] right-[20%] h-4 w-4 rounded-full bg-pink-200/50" />
 
-	<div class="mx-auto max-w-7xl px-4 py-16">
+	<div class="mx-auto max-w-7xl px-4 py-16 ">
 		<!-- Header -->
 		<div class="text-center">
 			<div class="text-red-500">Creativity</div>
@@ -56,7 +57,7 @@
 		</div>
 
 		<!-- Navigation Controls -->
-		<div class="mt-8 flex items-center justify-center gap-8">
+		<div class="mt-8 flex items-center justify-center gap-8 ">
 			<button
 				class="rounded-full bg-red-500 p-3 text-white transition hover:bg-red-600"
 				on:click={prevSlide}
@@ -107,6 +108,3 @@
 	</div>
 </div>
 
-<style>
-	/* Add any additional styles here */
-</style>

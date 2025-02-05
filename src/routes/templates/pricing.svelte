@@ -7,7 +7,7 @@
 
 	
 </script>
-<div class="background">
+<div class="bg-[url('/background.png')] bg-cover bg-center h-screen w-full sm:bg-contain md:bg-cover">
 	<Navigation />
 
 <div class="min-h-screen font-sans">
