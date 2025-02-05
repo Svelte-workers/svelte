@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Smallblob from '$lib/smallblob.svelte';
 	import { pageTabs } from '../../stores/userVariables';
 
 	interface Feature {
@@ -18,12 +19,13 @@
 	function handleFeatureClick(route: string): void {
 		$pageTabs = route;
 	}
+	
 </script>
 
 <div class="relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50">
 	<div class="p-10 text-center">
 		<h2 class="text-font text-3xl font-bold text-red-500">Features</h2>
-		<h1 class="text-font mt-2 text-[30px] font-bold">Veent goes beyond<br />basic registration.</h1>
+		<h1 class="text-font mt-2 text-[30px] font-bold ">Veent goes beyond<br />basic registration.</h1>
 		<p class="text-font mx-auto mb-16 mt-4 max-w-2xl text-gray-600">
 			Our suite of features empowers you to create seamless event experiences. Choose a feature to
 			see details.
@@ -36,7 +38,7 @@
 				class="absolute left-[5%] top-[10%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('effortless')}
 			>
-				<div class="h-[200px] w-[200px] rounded-[40%] bg-pink-300/70 blur-md"></div>
+				<div class="h-[200px] w-[200px] rounded-[40%] "><Smallblob/></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Effortless</div>
 					<div class="text-[16px]">Event Pages</div>
@@ -48,7 +50,7 @@
 				class="absolute right-[10%] top-[15%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('seamless')}
 			>
-				<div class="h-[180px] w-[180px] rounded-[40%] bg-orange-200/70 blur-md"></div>
+				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob/></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Seamless</div>
 					<div class="text-[16px]">Payments</div>
@@ -60,7 +62,7 @@
 				class="absolute left-[35%] top-[40%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('stream')}
 			>
-				<div class="h-[190px] w-[190px] rounded-[40%] bg-pink-200/70 blur-md"></div>
+				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob/></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Streamlined</div>
 					<div class="text-[16px]">Attendance</div>
@@ -72,7 +74,7 @@
 				class="absolute left-[10%] top-[60%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('smart')}
 			>
-				<div class="h-[190px] w-[190px] rounded-[40%] bg-red-300/70 blur-md"></div>
+				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob/></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Smart</div>
 					<div class="text-[16px]">Attendee Data</div>
@@ -84,7 +86,7 @@
 				class="absolute right-[15%] top-[65%] cursor-pointer transition-transform hover:scale-105"
 				on:click={() => handleFeatureClick('data_driven')}
 			>
-				<div class="h-[180px] w-[180px] rounded-[40%] bg-orange-100/70 blur-md"></div>
+				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob/></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
 					<div class="text-[24px] font-bold">Data-Driven</div>
 					<div class="text-[16px]">Decisions</div>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { pageTabs } from '../../stores/userVariables';
+	import Seam from '../icons/seam.svelte';
 	import Seamless from '../icons/seamless.svelte';
 
 	let currentSlide = 0;
@@ -20,6 +21,7 @@
 	function goBack() {
 		$pageTabs = 'features';
 	}
+	
 </script>
 
 <div class="relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50">
@@ -34,20 +36,32 @@
 		<div class="text-center">
 			<div class="text-red-500">Convenience</div>
 			<h1 class="mt-4 text-4xl font-bold">Seamless Payments</h1>
-			<p class="mx-auto mt-4 max-w-2xl text-gray-600">
+			<p class="mx-auto mt-4 max-w-2xl text-[#3F3D3E] text=[16px]">
 				Accept registrations with integrated payment processing for a smooth and secure experience.
-				<span class="text-sm text-gray-500">(additional fees may apply)</span>
+				<span class="text-sm text-[#3F3D3E] text=[16px]">(additional fees may apply)</span>
 			</p>
 		</div>
 
 		<!-- Center Image -->
-		<div class="mt-16 flex items-center justify-center">
+		<div class="mt-5 flex items-center justify-center">
 			<div class="flex w-full max-w-4xl justify-center">
 				<div class="cursor-pointer transition-transform hover:scale-105" on:click={goBack}>
 					<Seamless />
 				</div>
 			</div>
 		</div>
+
+		<div class="text-center mt-5">
+			<p>
+				We can also payment installment via
+			</p>
+			<div class=" justify-center item-center flex mt-5">
+				<Seam />
+			</div>
+		</div>
+
+		
+	
 
 		<!-- Navigation Controls -->
 		<div class="mt-8 flex items-center justify-center gap-8">
