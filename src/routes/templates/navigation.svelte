@@ -27,7 +27,7 @@
 			<li>
 				<button
 					on:click={() => ($pageTabs = tab.name)}
-					class="mx-[30px] border-b-[3px] pt-[8px] text-black transition-all
+					class="mx-[20px] border-b-[3px] pt-[8px] text-black transition-all
                     {$pageTabs === tab.name
 						? 'border-[#D12F2B] text-[#D12F2B]'
 						: 'border-transparent text-[#D12F2B] hover:border-[#D12F2B] hover:text-[#D12F2B]'}"
