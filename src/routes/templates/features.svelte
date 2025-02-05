@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Smallblob from '$lib/smallblob.svelte';
 	import { pageTabs } from '../../stores/userVariables';
+	import Navigation from './navigation.svelte';
 
 	interface Feature {
 		title: string;
@@ -22,7 +23,8 @@
 	
 </script>
 
-<div class="relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50">
+<div class="background">
+	<Navigation />
 	<div class="p-10 text-center">
 		<h2 class="text-font text-3xl font-bold text-red-500">Features</h2>
 		<h1 class="text-font mt-2 text-[30px] font-bold ">Veent goes beyond<br />basic registration.</h1>

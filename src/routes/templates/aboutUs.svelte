@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
 	import CirclesRight from '$lib/circles-right.svelte';
-
+  import Navigation from './navigation.svelte';
 
 
   // let circles:any = [];
@@ -60,8 +60,9 @@
       z-index: 20; /* Higher than the blob */
   }
 </style> -->
-
-<div class="  py-[150px] relative min-h-screen text-gray-900">
+<CirclesRight/>
+<div class="background relative min-h-screen text-gray-900">
+  <Navigation />
   <!-- Floating Circles -->
   <!-- {#each circles as circle}
       <div class="floating-circle {circle.color}"
@@ -80,7 +81,7 @@
   </svg> -->
   
 
-<CirclesRight/>
+
 <!-- Blob Container -->
 <div class="blob"></div>
   <!-- Get Started Button -->

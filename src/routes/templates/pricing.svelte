@@ -1,12 +1,16 @@
 <script>
 	import Blob from "$lib/blob.svelte";
+	import Navigation from './navigation.svelte';
 
 	let currentYear = new Date().getFullYear();
 
+
 	
 </script>
+<div class="background">
+	<Navigation />
 
-<div class="min-h-screen bg-red-50 font-sans">
+<div class="min-h-screen font-sans">
 	<main class="max-w-5xl mx-auto py-16 px-8 text-center">
 		<h1 class="text-red-600 text-4xl font-bold mb-4">Pricing</h1>
 		<p class="text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
@@ -26,10 +30,6 @@
                     Sign up now!
                 </button>
             </a>
-
-			<div class="absolute inset-0 flex justify-center items-center z-[-1]">
-				<Blob />
-			</div>
 
 			<div class="text-left mt-8">
 
@@ -56,4 +56,5 @@
 			</div>
 		</div>
 	</main>
+</div>
 </div>

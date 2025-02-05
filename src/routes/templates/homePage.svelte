@@ -2,9 +2,11 @@
 	import Blob from "$lib/blob.svelte";
 	import CirclesLeft from "$lib/circles-left.svelte";
 	import CirclesRight from "$lib/circles-right.svelte";
-    
+    import Navigation from './navigation.svelte';
 
 </script>
+<div class="background">
+	<Navigation />
 
 
 <div class="">
@@ -45,4 +47,5 @@
         </a>      
        </div>
     </div>
+</div>
 </div>

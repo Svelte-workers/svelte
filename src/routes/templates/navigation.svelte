@@ -12,7 +12,7 @@
 //              "contactUs"];
 </script>
 
-<nav class="mt-[10px] mx-[60px] p-4 flex items-center justify-between">
+<nav class="mx-[60px] p-4 flex items-center justify-between">
   <div>
       <img class="w-[6rem]" src="/veent-logo.svg" alt="veent">
   </div>
@@ -25,7 +25,7 @@
                   class="mx-[30px] pt-[8px] text-black border-b-[3px] transition-all 
                     {($pageTabs === tab.name) 
                       ? 'text-[#D12F2B] border-[#D12F2B]' 
-                      : 'border-white text-[#D12F2B] hover:border-[#D12F2B] hover:text-[#D12F2B]'}">
+                      : 'border-transparent text-[#D12F2B] hover:border-[#D12F2B] hover:text-[#D12F2B]'}">
 
                   {tab.label}
               </button>

@@ -11,11 +11,10 @@
 	import Seamless from './templates/seamless.svelte';
 	import Stream from './templates/Stream.svelte';
 	import DataDriven from './templates/data_driven.svelte';
-
 	$pageTabs = 'home';
 </script>
 
-<Navigation />
+
 
 {#if $pageTabs == 'home'}
 	<HomePage />
