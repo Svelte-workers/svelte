@@ -25,7 +25,9 @@
 	}
 </script>
 
-<div class="relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50">
+<div class=".backgound">
+
+	<!-- relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50 -->
 	<!-- Background Blobs -->
 	<div class="absolute left-[5%] top-[10%] h-4 w-4 rounded-full bg-pink-200/50" />
 	<div class="absolute right-[10%] top-[15%] h-3 w-3 rounded-full bg-orange-200/50" />
