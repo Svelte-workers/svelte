@@ -4,9 +4,11 @@
 	import CirclesPricing from '$lib/circlesPricing.svelte';
 	import PricingBlob from '$lib/pricingBlob.svelte';
 	CirclesRight;
+	import Navigation from './navigation.svelte';
 
 	let currentYear = new Date().getFullYear();
 </script>
+<Navigation/>
 
 <div class="min-h-screen font-sans">
 	<main class="mx-auto max-w-5xl px-8 py-16 text-center">

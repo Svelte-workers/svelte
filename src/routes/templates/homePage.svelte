@@ -2,6 +2,7 @@
 	import CirclesLeft from '$lib/circles-left.svelte';
 	import CirclesRight from '$lib/circles-right.svelte';
 	import HomeBlob from '$lib/homeBlob.svelte';
+	import Navigation from './navigation.svelte';
 </script>
 
 <div class="">
@@ -11,9 +12,11 @@
 <div class="">
 	<CirclesRight />
 </div>
-
+<Navigation/>
 <div class="flex min-h-screen items-center justify-center">
+	
 	<div class="fade-down relative flex flex-col items-center justify-center text-center">
+		
 		<!-- Blob Positioned Behind Everything -->
 		<div class="absolute inset-0 z-[-1] flex items-center justify-center">
 			<HomeBlob />

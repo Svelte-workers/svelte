@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import CirclesRight from '$lib/circles-right.svelte';
+	import Navigation from './navigation.svelte';
+	import Aboutusblob from '../icons/aboutusblob.svelte';
 
 	// let circles:any = [];
 
@@ -58,8 +60,12 @@
       z-index: 20; /* Higher than the blob */
   }
 </style> -->
+<CirclesRight />
+<div
+	class="relative h-screen min-h-screen w-full bg-[url('/ic')] bg-cover bg-center text-gray-900 sm:bg-contain md:bg-cover"
+>
+	<Navigation />
 
-<div class="fadeLeft relative min-h-screen py-[150px] text-gray-900">
 	<!-- Floating Circles -->
 	<!-- {#each circles as circle}
       <div class="floating-circle {circle.color}"
@@ -76,12 +82,11 @@
           </clipPath>
       </defs>
   </svg> -->
-	<CirclesRight />
 
 	<!-- Blob Container -->
 	<div class="blob"></div>
 	<!-- Get Started Button -->
-	<div class=" m-[40px] min-h-screen text-gray-900">
+	<div class="fade-up m-[40px] min-h-screen text-gray-900">
 		<section class="relative m-0 flex flex-col items-center px-12 md:flex-row">
 			<!-- Left Content -->
 			<div class=" relative space-y-6">
@@ -109,6 +114,7 @@
 						</p>
 					</div>
 				</div>
+				<Aboutusblob />
 
 				<!-- Floating Action Button with Fixed Position -->
 				<a

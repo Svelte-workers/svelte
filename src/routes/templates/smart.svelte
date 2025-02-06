@@ -2,6 +2,7 @@
 	import { pageTabs } from '../../stores/userVariables';
 	import Nav from '../icons/nav.svelte';
 	import Smart from '../images/smart.svelte';
+	import Navigation from './navigation.svelte';
 
 
 
@@ -11,8 +12,10 @@
 
 	
 </script>
+<Navigation/>
 
 <div class="relative min-h-screen overflow-hidden">
+
 	<!-- Background Blobs -->
 	<div class="absolute left-[5%] top-[10%] h-4 w-4 rounded-full bg-pink-200/50" />
 	<div class="absolute right-[10%] top-[15%] h-3 w-3 rounded-full bg-orange-200/50" />

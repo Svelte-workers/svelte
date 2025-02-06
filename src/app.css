@@ -2,12 +2,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+.background {
+	min-height: 100vh;
+	position: relative;
+	z-index: 0;
+}
+
 .gwapo {
 	background-color: pink;
 }
 
 :root {
 	--animation-duration: 0.5s;
+	color: #333a3f;
 }
 @keyframes fadeDown {
 	from {

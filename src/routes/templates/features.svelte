@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Smallblob from '$lib/smallblob.svelte';
 	import { pageTabs } from '../../stores/userVariables';
+	import Navigation from './navigation.svelte';
 
 	interface Feature {
 		title: string;
@@ -20,6 +21,8 @@
 		$pageTabs = route;
 	}
 </script>
+<Navigation />
+
 
 <div class="relative my-[-20px] overflow-hidden">
 	<div class="p-10 text-center">
@@ -61,7 +64,7 @@
 			<!-- Streamlined -->
 			<button
 				class="absolute left-[40%] top-[20%] cursor-pointer transition-transform hover:scale-105"
-				on:click={() => handleFeatureClick('stream')}
+				on:click={() => handleFeatureClick('Stream')}
 			>
 				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">

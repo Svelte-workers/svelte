@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { pageTabs } from '../../stores/userVariables';
-	import Nav from '../icons/nav.svelte';
 	import Effort from '../images/effort.svelte';
-
+	import Navigation from './navigation.svelte';
 	
 
 	// @ts-ignore
@@ -11,15 +10,21 @@
 	}
 	
 </script>
+<Navigation />
 
-<div class="relative min-h-screen overflow-hidden ">
+
+
+<div class="">
+	
+
+	<!-- relative min-h-screen overflow-hidden bg-gradient-to-b from-pink-50 to-orange-50 -->
 	<!-- Background Blobs -->
 	<div class="absolute left-[5%] top-[10%] h-4 w-4 rounded-full bg-pink-200/50" />
 	<div class="absolute right-[10%] top-[15%] h-3 w-3 rounded-full bg-orange-200/50" />
 	<div class="absolute bottom-[20%] left-[15%] h-5 w-5 rounded-full bg-red-200/50" />
 	<div class="absolute bottom-[25%] right-[20%] h-4 w-4 rounded-full bg-pink-200/50" />
 
-	<div class="mx-auto max-w-7xl px-4 py-16">
+	<div class="mx-auto max-w-7xl px-4 py-16 ">
 		<!-- Header -->
 		<div class="text-center">
 			<div class="text-red-500">Creativity</div>
@@ -38,7 +43,9 @@
 			</div>
 		</div>
 
-		<Nav/>
+	
+
+			<Nav/>
 	</div>
 </div>
 
