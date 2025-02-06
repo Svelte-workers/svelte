@@ -2,7 +2,7 @@
 	import { pageTabs } from '../../stores/userVariables';
 	import Effort from '../images/effort.svelte';
 	import Navigation from './navigation.svelte';
-	
+	import Nav from '../icons/nav.svelte';
 
 	// @ts-ignore
 	function goBack() {
@@ -27,8 +27,8 @@
 	<div class="mx-auto max-w-7xl px-4 py-16 ">
 		<!-- Header -->
 		<div class="text-center">
-			<div class="text-red-500">Creativity</div>
-			<h1 class="mt-4 text-4xl font-bold">Effortless Event Pages</h1>
+			<div class="text-2px text-[25px] font-bold text-[#D12F2B]">Creativity</div>
+			<h1 class="mt-2 text-4xl font-bold">Effortless Event Pages</h1>
 			<p class="mx-auto mt-4 max-w-2xl text-gray-600">
 				Design beautiful and informative event landing pages in minutes, no coding required.
 			</p>
@@ -48,4 +48,3 @@
 			<Nav/>
 	</div>
 </div>
-

@@ -13,16 +13,17 @@
 		{ title: 'Effortless', subtitle: 'Event Pages', route: 'effortless' },
 		{ title: 'Seamless', subtitle: 'Payments', route: 'seamless' },
 		{ title: 'Smart', subtitle: 'Attendee Data', route: 'smart' },
-		{ title: 'Streamlined', subtitle: 'Attendance', route: 'stream' },
+		{ title: 'Stream', subtitle: 'Attendance', route: 'stream' },
 		{ title: 'Data-Driven', subtitle: 'Decisions', route: 'data_driven' }
 	];
 
 	function handleFeatureClick(route: string): void {
 		$pageTabs = route;
 	}
-</script>
-<Navigation />
 
+</script>
+
+<Navigation/>
 
 <div class="relative my-[-20px] overflow-hidden">
 	<div class="p-10 text-center">
@@ -64,7 +65,7 @@
 			<!-- Streamlined -->
 			<button
 				class="absolute left-[40%] top-[20%] cursor-pointer transition-transform hover:scale-105"
-				on:click={() => handleFeatureClick('Stream')}
+				on:click={() => handleFeatureClick('stream')}
 			>
 				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">

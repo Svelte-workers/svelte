@@ -24,8 +24,9 @@
 	let currentYear = new Date().getFullYear();
 </script>
 
-<div class="background relative overflow-hidden">
-	<Navigation classNames="relative z-50" />
+<Navigation/>
+
+<div class="background relative ">
 	<!-- Upper right circle -->
 	<div
 		class="absolute -right-60 -top-60 h-[600px] w-[600px] rounded-full bg-[#D12B7A] opacity-20 blur-[100px]"

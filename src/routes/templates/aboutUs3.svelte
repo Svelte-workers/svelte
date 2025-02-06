@@ -45,8 +45,7 @@
           <AboutusCircle/>
 
 <!-- Floating Action Button with Fixed Position -->
-<a 
-role="button" 
+<a role="button" 
 on:click={() => pageTabs.set("aboutUs2")} 
 class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center 
        shadow-lg cursor-pointer hover:scale-110 hover:animate-bounce transition-transform"

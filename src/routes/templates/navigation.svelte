@@ -15,7 +15,7 @@
 </script>
 
 <nav
-	class="sticky top-0 z-50 mt-[10px] flex items-center justify-between p-4 px-[90px] backdrop-blur-2xl
+	class="sticky top-0 z-50 flex items-center justify-between p-4 px-[90px] backdrop-blur-2xl
 "
 >
 	<div>

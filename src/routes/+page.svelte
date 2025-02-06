@@ -38,7 +38,7 @@
 	<Smart />
 {:else if $pageTabs == 'seamless'}
 	<Seamless />
-{:else if $pageTabs == 'Stream'}
+{:else if $pageTabs == 'stream'}
 	<Stream />
 {:else if $pageTabs == 'data_driven'}
 	<DataDriven />

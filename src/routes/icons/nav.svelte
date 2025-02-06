@@ -14,26 +14,23 @@
 	function nextSlide() {
 		currentSlide = (currentSlide + 1) % totalSlides;
 		$pageTabs = slides[currentSlide].name;
-		// console.log( "nextSlide");
 	}
 
 	function prevSlide() {
 		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
 		$pageTabs = slides[currentSlide].name;
-		// console.log( "prevSlide");
 	}
 
 	function goToSlide(index: number) {
 		currentSlide = index;
 		$pageTabs = slides[currentSlide].name;
-		// console.log("goToSlide");
 	}
 
 
 	
 </script>
 
-<!-- Navigation Controls -->
+<div>
 <nav class="item-center mt-8 flex items-center justify-center gap-8">
 	<button
 		class="rounded-full bg-red-500 p-3 text-white transition hover:bg-red-600"
@@ -51,7 +48,6 @@
 		</svg>
 	</button>
 
-	<!-- Navigation Dots -->
 	<div class="flex space-x-2">
 		{#each Array(totalSlides) as _, i}
 			<button
@@ -79,3 +75,7 @@
 		</svg>
 	</button>
 </nav>
+</div>
+
+
+
