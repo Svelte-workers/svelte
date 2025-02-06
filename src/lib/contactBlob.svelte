@@ -31,7 +31,7 @@
 		transition: 3s all;
 		animation:
 			floating 4s ease-in-out infinite,
-			scaling 3s ease-in-out infinite;
+			scaling 10s ease-in-out infinite;
 		z-index: -1; /* Moves blob behind ContactUs */
 		opacity: 0.5; /* Optional: Reduce opacity */
 	}

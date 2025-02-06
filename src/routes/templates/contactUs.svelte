@@ -49,7 +49,7 @@
 				>
 					Get in touch with us!
 				</h1>
-				<p class="mb-8 text-lg text-gray-600">
+				<p class="text-lg text-gray-600">
 					Interested? Just pick up the phone to talk with our representative.
 				</p>
 
@@ -113,7 +113,7 @@
 							<p class="lg:text-md text-md">0985-890-8764<br />0956-760-0090</p>
 						</div>
 					</div>
-					<div class="mt-6 flex gap-6">
+					<div class="mt-12 flex gap-6">
 						<a
 							href="https://www.facebook.com/veent.io"
 							class="text-red-600 transition-transform duration-300 ease-in-out hover:scale-110 hover:underline"
