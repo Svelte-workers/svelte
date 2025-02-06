@@ -8,6 +8,9 @@
 	import Call from '../icons/call.svelte';
 	import Contactus from '../icons/contactus.svelte';
 	import Contactusblob from '../icons/contactusblob.svelte';
+	import CirclesUpperRight from '$lib/circles-upper-right.svelte';
+	import CirclesLowerRight from '$lib/circles-lower-right.svelte';
+
 	import Facebook from '../icons/facebook.svelte';
 	import Instagram from '../icons/instagram.svelte';
 	import Location from '../icons/location.svelte';
@@ -17,13 +20,12 @@
 	import Tiktok from '../icons/tiktok.svelte';
 	import Twitter from '../icons/twitter.svelte';
 	import Navigation from './navigation.svelte';
-
+	import 'animate.css';
 	let currentYear = new Date().getFullYear();
-	
-	
 </script>
 
 <div class="background relative overflow-hidden">
+	<Navigation classNames="relative z-50" />
 	<!-- Upper right circle -->
 	<div
 		class="absolute -right-60 -top-60 h-[600px] w-[600px] rounded-full bg-[#D12B7A] opacity-20 blur-[100px]"
@@ -34,33 +36,26 @@
 		class="absolute -bottom-60 -left-60 h-[600px] w-[600px] rounded-full bg-[#D1822B] opacity-20 blur-[100px]"
 	></div>
 
-	<Navigation />
 	<div class="w-full px-4 md:px-8 lg:px-24">
 		<!-- Added responsive padding -->
 		<main class="flex flex-col gap-8 py-8 lg:flex-row lg:gap-24 lg:py-12">
 			<!-- Made flex column on mobile -->
-			<div class="relative flex-1 rounded-3xl p-6 lg:p-12">
+			<div class="relative flex-1 rounded-3xl">
 				<!-- Blob added here and positioned behind content -->
-				<ContactBlob class="absolute inset-0 left-0 top-0 -z-10 h-[80%] w-[80%]" />
+				<ContactBlob />
 
-				<h1 class="mb-4 text-3xl font-bold text-red-600 lg:text-4xl">Get in touch with us!</h1>
+				<h1
+					class="animate__animated animate__fadeInLeft mb-4 text-3xl font-bold text-red-600 lg:text-4xl"
+				>
+					Get in touch with us!
+				</h1>
 				<p class="mb-8 text-lg text-gray-600">
 					Interested? Just pick up the phone to talk with our representative.
 				</p>
 
-				<div class="lg: w-full lg:ps-16">
+				<div class="lg: w-full lg:ps-64">
 					<Contactus />
 				</div>
-<div class="">
-	<main class="flex px-24 py-12 gap-24">
-		<div class="flex-1 bg-blue-100 rounded-3xl p-12 relative"> 
-			<h1 class="text-red-600 text-4xl font-bold mb-4">Get in touch with us!</h1>
-			<p class="text-gray-600 mb-8">Interested? Just pick up the phone to talk with our representative.</p>
-
-			<div class="w-full py-8">
-				<div class="w-full h-72 bg-gray-900 rounded-xl"></div>
-				
-			</div>
 
 				<div class="mt-4 flex justify-center">
 					<button
@@ -72,12 +67,14 @@
 			</div>
 
 			<div class="flex flex-1 flex-col gap-6 lg:gap-10">
+				<CirclesUpperRight />
+				<CirclesLowerRight />
 				<!-- Locate us section -->
 				<div class="">
 					<h2 class="mb-4 text-2xl font-extrabold text-red-600 lg:text-[32px]">Locate Us</h2>
 					<div class="mb-4 flex flex-col items-start gap-4 sm:flex-row">
 						<Location />
-						<p class="text-sm lg:text-lg">
+						<p class="lg:text-md text-sm">
 							2nd Floor, Lifestyle District,<br />Corrales Ext., Cagayan de Oro City 9000
 						</p>
 					</div>
@@ -109,11 +106,11 @@
 					<div class="flex flex-col gap-2">
 						<div class="flex items-center gap-4">
 							<Mail />
-							<p class="text-sm font-medium lg:text-lg">hello@veent.io</p>
+							<p class="lg:text-md text-md">hello@veent.io</p>
 						</div>
 						<div class="flex items-center gap-4">
 							<Call />
-							<p class="text-sm font-medium lg:text-lg">0985-890-8764<br />0956-760-0090</p>
+							<p class="lg:text-md text-md">0985-890-8764<br />0956-760-0090</p>
 						</div>
 					</div>
 					<div class="mt-6 flex gap-6">
@@ -140,8 +137,9 @@
 					</div>
 				</div>
 
-				<footer class="mt-auto text-xs text-gray-600 lg:text-sm">
-					<p>Veent | All Rights Reserved {currentYear}</p>
+				<footer class="mt-auto text-xs font-medium text-gray-600/70 lg:text-sm">
+					<p class="hidden sm:block">Veent | All Rights Reserved {currentYear}</p>
+					<p class="block sm:hidden">Veent | © {currentYear}</p>
 				</footer>
 			</div>
 		</main>
