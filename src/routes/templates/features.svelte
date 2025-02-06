@@ -21,7 +21,7 @@
 	}
 </script>
 
-<div class="relative my-[70px] overflow-hidden">
+<div class="relative my-[-20px] overflow-hidden">
 	<div class="p-10 text-center">
 		<h2 class="text-font text-[25px] font-bold text-red-500">Features</h2>
 		<h1 class="text-font mt-px text-[35px] font-bold">
@@ -41,8 +41,8 @@
 			>
 				<div class="h-[200px] w-[200px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
-					<div class="text-[24px] font-bold">Effortless</div>
-					<div class="text-[16px]">Event Pages</div>
+					<div class="text-[40px] font-bold ">Effortless</div>
+					<div class="text-[20px] mt-[-10px]">Event Pages</div>
 				</div>
 			</button>
 
@@ -53,8 +53,8 @@
 			>
 				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
-					<div class="text-[24px] font-bold">Seamless</div>
-					<div class="text-[16px]">Payments</div>
+					<div class="text-[40px] font-bold">Seamless</div>
+					<div class="text-[20px] mt-[-10px]">Payments</div>
 				</div>
 			</button>
 
@@ -65,8 +65,8 @@
 			>
 				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
-					<div class="text-[24px] font-bold">Streamlined</div>
-					<div class="text-[16px]">Attendance</div>
+					<div class="text-[40px] font-bold">Streamlined</div>
+					<div class="text-[20px] mt-[-10px]">Attendance</div>
 				</div>
 			</button>
 
@@ -77,8 +77,8 @@
 			>
 				<div class="h-[190px] w-[190px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
-					<div class="text-[24px] font-bold">Smart</div>
-					<div class="text-[16px]">Attendee Data</div>
+					<div class="text-[40px] font-bold">Smart</div>
+					<div class="text-[20px] mt-[-10px]">Attendee Data</div>
 				</div>
 			</button>
 
@@ -89,8 +89,8 @@
 			>
 				<div class="h-[180px] w-[180px] rounded-[40%]"><Smallblob /></div>
 				<div class="absolute inset-0 flex flex-col items-center justify-center">
-					<div class="text-[24px] font-bold">Data-Driven</div>
-					<div class="text-[16px]">Decisions</div>
+					<div class="text-[33px] font-bold">Data-Driven</div>
+					<div class="text-[20px] mt-[-10px]">Decisions</div>
 				</div>
 			</button>
 

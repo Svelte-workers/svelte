@@ -1,31 +1,44 @@
 <script lang="ts">
 	import { pageTabs } from '../../stores/userVariables';
 
-	let currentSlide = 3;
+	let currentSlide = 0;
 	const totalSlides = 5;
+	const slides = [
+		{ name: 'stream', label: 'Stream' },
+		{ name: 'smart', label: 'Smart' },
+		{ name: 'seamless', label: 'Seamless' },
+		{ name: 'effortless', label: 'Effortless' },
+		{ name: 'data_driven', label: 'Data Driven' }
+	];
 
 	function nextSlide() {
 		currentSlide = (currentSlide + 1) % totalSlides;
+		$pageTabs = slides[currentSlide].name;
+		// console.log( "nextSlide");
 	}
 
 	function prevSlide() {
 		currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+		$pageTabs = slides[currentSlide].name;
+		// console.log( "prevSlide");
 	}
 
 	function goToSlide(index: number) {
 		currentSlide = index;
+		$pageTabs = slides[currentSlide].name;
+		// console.log("goToSlide");
 	}
 
-	function goBack() {
-		$pageTabs = 'features';
-	}
+
+	
 </script>
 
 <!-- Navigation Controls -->
-<div class=" item-center mt-8 flex items-center justify-center gap-8">
+<nav class="item-center mt-8 flex items-center justify-center gap-8">
 	<button
 		class="rounded-full bg-red-500 p-3 text-white transition hover:bg-red-600"
 		on:click={prevSlide}
+
 	>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +59,7 @@
 					? 'w-4 bg-red-500'
 					: 'bg-gray-300'}"
 				on:click={() => goToSlide(i)}
+				aria-label={slides[i].label}
 			/>
 		{/each}
 	</div>
@@ -64,4 +78,4 @@
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 		</svg>
 	</button>
-</div>
+</nav>

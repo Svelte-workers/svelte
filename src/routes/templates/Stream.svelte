@@ -33,6 +33,9 @@
 				</button>
 			</div>
 		</div>
+		<!-- Navigation Controls -->
+
+		<Nav />
+
 	</div>
-	<Nav />
 </div>

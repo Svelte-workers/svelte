@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { pageTabs } from '../../stores/userVariables';
 	import Nav from '../icons/nav.svelte';
-	import DataDriven from '../images/data_driven.svelte';
+	import DataDriven from '../images/data_driv.svelte';
 
 	function goBack() {
 		$pageTabs = 'features';

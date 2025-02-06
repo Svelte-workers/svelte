@@ -9,7 +9,7 @@
 	import Effortless from './templates/effortless.svelte';
 	import Smart from './templates/smart.svelte';
 	import Seamless from './templates/seamless.svelte';
-	import Stream from './templates/Stream.svelte';
+	import Stream from './templates/stream.svelte';
 	import DataDriven from './templates/data_driven.svelte';
 
 	$pageTabs = 'home';
@@ -33,7 +33,7 @@
 	<Smart />
 {:else if $pageTabs == 'seamless'}
 	<Seamless />
-{:else if $pageTabs == 'stream'}
+{:else if $pageTabs == 'Stream'}
 	<Stream />
 {:else if $pageTabs == 'data_driven'}
 	<DataDriven />
